@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="flex-container">
+        
+            <div class="bar">
+                <a href="main.html" id="logoPart">
+                    <div class="minLogo">
+                        <div id="traffic"><img src="img/traffic.png" width="36px" height="36px"></div>
+                        <p>traffic</p>
+                    </div>
+                </a>
+                <a class="menu">
+                    <img onclick="menu()" class="menuButton" src="img/menu-24px.png"> 
+                    <div class="cardState" id="noneCard">
+                        <img id="close" onclick="menu()" src="img/close.png" >
+                        <div class="items">
+                                <div class="leftBox"></div>
+                                <div class="item">
+                                    <h3>ABOUT&nbspUS</h3>
+                                </div>
+                                <div class="leftBox"></div>
+                                <div class="item">
+                                    <h3>SERVICES</h3>
+                                </div>
+                                <div class="leftBox"></div>
+                                <div class="item">
+                                    <h3>CONTACT</h3>
+                                </div>
+                                <div class="leftBox"></div>
+                                <div class="item">
+                                    <h3>CAREER</h3>
+                                </div>
+                        </div>
+                        
+                        
+                    </div>
+                    <div id="hiddencard" onclick="menu()"></div>
+                </a>
+                  
+            <div id="bgSignUp">
+                <a href="" onclick="signAlert()">
+                    <div class="lets" id="signUp"><p>SIGN UP</p></div>
+                </a>
+            </div>
+            <div class="bgBlurImg">
+                <img class="blurImg" src="img/bgTraffic.png">
+            </div>
+
+            <script>  
+                document.getElementsByClassName("cardState")[0].style.display="none";
+                        
+                function signAlert() {
+                    alert("Successful");
+                }
+                function menu(){
+                    document.getElementsByClassName("cardState")[0].style.display="block";
+                    if(document.getElementsByClassName("cardState")[0].id==="card"){
+                        // document.getElementById("card").style.display ="none";
+                        document.getElementsByClassName("menuButton")[0].style.pointerEvents="auto";
+                        document.getElementById("bgSignUp").style.pointerEvents="auto";
+                        document.getElementById("logoPart").style.pointerEvents="auto";
+                        document.getElementById("hiddencard").style.display="none";
+                        document.getElementById("card").id="noneCard";
+                    
+                    }
+                    else{
+                        // document.getElementById("card").style.display ="block";
+                        document.getElementsByClassName("menuButton")[0].style.pointerEvents="none";
+                        document.getElementById("bgSignUp").style.pointerEvents="none";
+                        document.getElementById("logoPart").style.pointerEvents="none";
+                        document.getElementById("hiddencard").style.display="block";
+                        document.getElementById("noneCard").id="card";
+                        
+                    }
+                }
+            </script>
+    </div>
+</body>
+</html>

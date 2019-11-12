@@ -1,0 +1,314 @@
+body{
+    position: relative;
+    width: 375px;
+    height: 812px;
+    background: #FFFFFF;
+    border: gray 1px solid;
+    left: 15px;
+}
+.flex-container {
+    display: grid;
+    position: relative;    
+}
+#lighterBlue{
+    position: absolute;
+    width: 375px;
+    height: 687.5px;
+    left: 0px;
+    top: 59px;
+}
+#blue{
+    position: absolute;
+    width: 375px;
+    height: 637.5px;
+    left: 0px;
+    top: 174.5px;
+    
+}
+#traffic{
+    position: absolute;
+    padding: 0px;
+    margin: 0px;
+}
+#logo p{
+    
+    position: absolute;
+    width: 103px;
+    height: 28px;
+    top: 76px;
+    left: -1px;
+
+
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 27px;
+    line-height: 33px;
+    /* identical to box height */
+    text-align: center;
+    color: #4ECAFF;
+ 
+
+}
+#logo{
+    position: absolute;
+    width: 103px;
+    height: 103px;
+    left: 136px;
+    top: 71px;
+
+}
+.lets{
+    
+    position: absolute;
+    width: 301px;
+    height: 48px;
+    left: 37px;
+    top: 530px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.09);
+    border-radius: 4px;
+
+
+}
+.lets p{
+    position: absolute;
+    width: 155px;
+    height: 17px;
+    left: 74px;
+    
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #00AEF9;
+
+}
+.do{
+
+    position: absolute;
+    width: 301px;
+    height: 48px;
+    left: 37px;
+    top: 593px;
+    
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.09);
+    border-radius: 4px;
+}
+.do p{
+    position: absolute;
+    width: 193px;
+    height: 14px;
+    left: 55px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.minLogo{
+    position: absolute;
+    width: 97.42px;
+    height: 36px;
+    left: 9px;
+    top: 13px;
+}
+.minLogo p{
+    position: absolute;
+    width: 59px;
+    height: 20px;
+    left: 35px;
+    top: -9px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #4ECAFF;
+}
+.bar{
+    height: 67px;
+    background: white;
+    border-bottom: gray 1px solid;
+}
+.menuButton{
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    left: 0px;
+    top: 0px;
+
+}
+.menu{
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    left: 322px;
+    top: 17px;
+
+}
+#bgSignUp{
+    position: absolute;
+    width: 375px;
+    height: 154px;
+    left: 0px;
+    top: 67px;
+    background: #F0F0F0;
+}
+#signUp{
+    top: 53px !important;
+}
+.blurImg{
+    position: absolute;
+    width: 375px;
+    height: 358px;
+    left: 0px;
+    top: 0px;
+    background: url(/img/bgTraffic.png);
+    mix-blend-mode: multiply;
+    background-color: red;
+    opacity: 20%;
+    margin: 0px;
+    padding: 0px;
+}
+.bgBlurImg{
+    position: absolute;
+    width: 375px;
+    height: 358px;
+    left: 0px;
+    top: 219px;
+    background: #00AEF9;
+}
+#card {
+    position: absolute;
+    width: 250px;
+    height: 812px;
+    top: -17px;
+    left: -196px;
+
+    -webkit-animation-duration: 2s;
+    -webkit-animation-name: rightToLeft;
+    z-index: 2;
+
+    transition: all 0.01s ease-in;
+    display: block;
+    background: #00AEF9;
+
+  }
+@-webkit-keyframes rightToLeft {
+    from {
+        width: 0px;
+        left: 53px;
+
+    }
+    to {
+        width: 250px;
+        left: -196px;
+
+    }
+  }
+#noneCard{
+    position: absolute;
+    top: -17px;
+    right: -21px;
+    display: block;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-name:leftToRight;
+    z-index: 2;
+    background: #00AEF9;
+    transition: all 0.001s ease-out;
+    
+  }
+@-webkit-keyframes leftToRight {
+    from {
+        height: 812px;
+        width: 250px;
+        left: -196px;
+        right: -21px;
+
+    }
+    to {
+        width: 0px;
+        height: 812px;
+        left: 53px;
+        padding:0px;
+        right: -100px;
+        display: none;
+    }
+  }
+
+
+#hiddencard{
+    position: absolute;
+    top: -17px;
+    right: -21px;
+    width: 375px;
+    height: 812px;
+    background-color: black;
+    opacity:10%;
+    z-index: 1;
+    display: none;
+    transition: 0.5s;
+
+  }
+
+.item{
+    position: relative;
+    height: 50px;
+    padding: 0px;
+    margin-top:-50px;
+    right: 0%;
+    bottom: 0%;
+    background: #009EE2;
+    z-index: -1;
+  }
+
+.leftBox{
+    height: 50px;
+    width: 3.5%;
+    position: relative;
+    margin-top: 5px;
+    margin-bottom:0px ;
+    left: 0%;
+    right: 96.80%;
+    bottom: 0%;
+    background: #007DB3;
+}
+.items{
+    position: relative;
+    top: 70px;
+}
+#close{
+    position: absolute;
+    left: 82%;
+    right: 8%;
+    top: 1%;
+    bottom: 94%;
+}
+.item h3{
+    
+    position: absolute;
+    left:7%;
+    right: 58.6%;
+    top: 0%;
+    bottom:0%;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 15px;
+    color: #FFFFFF;
+
+}
+
+
